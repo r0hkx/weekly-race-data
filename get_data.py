@@ -20,3 +20,5 @@ if response.status_code == 200:
     
     with open(file_name, "w") as f:
         f.write(response.text)
+else:
+    print(str(response.status_code) + " bad response")
