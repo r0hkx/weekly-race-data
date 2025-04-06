@@ -6,7 +6,7 @@ url = "https://mcsrranked.com/api/weekly-race/0"
 
 response = requests.get(url)
 
-week_1 = datetime.datetime(2024, 9, 29, 0, 0, 0, tzinfo=datetime.timezone.utc)
+week_1 = datetime.datetime(2024, 9, 30, 0, 0, 0, tzinfo=datetime.timezone.utc)
 
 if response.status_code == 200:
     current_time = datetime.datetime.now(datetime.timezone.utc)
